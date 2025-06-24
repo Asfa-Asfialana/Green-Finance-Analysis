@@ -110,7 +110,7 @@ Kesimpulan Hasil :
 
 Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkungan (green investment), khususnya dalam rangka transisi energi bersih dan kebijakan pembiayaan hijau.
 
-### 📊 Struktur Data
+#### 📊 Struktur Data
 
 | Nama Kolom                 | Deskripsi Singkat                                                                 |
 |---------------------------|------------------------------------------------------------------------------------|
@@ -127,7 +127,7 @@ CROI=Σ(Rₜ+Pc)/I₀
 ```
 **CROI** mengukur seberapa efisien suatu proyek dalam menghasilkan manfaat lingkungan (pengurangan emisi karbon) dibandingkan dengan biaya investasi proyek tersebut.
 
-### Penjelasan tambahan
+#### Penjelasan tambahan
 
 | Komponen            | Penjelasan                                                                 |
 |---------------------|----------------------------------------------------------------------------|
@@ -141,8 +141,4 @@ Analisis CROI dari data : [Environmental_Dataset](https://github.com/Asfa-Asfial
 
 ![enviromental-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/enviromental-dataset.png)
 
-Kesimpulan hasil :
-* Proyek dengan **CROI tertinggi** menunjukkan dampak pengurangan karbon yang paling efisien secara finansial.
-* Proyek yang memiliki **CO2\_Reduction besar dan biaya investasi rendah** cenderung menghasilkan **CROI tinggi**.
-* Proyek seperti `PLTS-JABW-001` atau `PLTS-JATIM-001` (misalnya) akan menjadi prioritas investasi ramah lingkungan.
-
+### 2.3 
