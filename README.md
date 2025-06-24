@@ -139,7 +139,7 @@ CROI=Σ(Rₜ+Pc)/I₀
 
 Analisis CROI dari data : [Environmental_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Environmental_Dataset.csv) menunjukkan hasil sebagai berikut :
 
-!
+![enviromental-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/enviromental-dataset.png)
 
 Kesimpulan hasil :
 * Proyek dengan **CROI tertinggi** menunjukkan dampak pengurangan karbon yang paling efisien secara finansial.
