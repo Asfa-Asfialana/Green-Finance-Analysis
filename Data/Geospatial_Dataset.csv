@@ -1,0 +1,11 @@
+Project_ID;Solar_Irradiance;Water_Flow;Distance_to_Grid;Konteks_Geospasial;Efisiensi_Lokasi
+PLTS-NTT-001;5,8;0;8;Sumba: radiasi tinggi, dekat jaringan;High: ????????
+PLTM-SUMUT-001;0;1,5;5;Tapanuli: debit stabil, akses PLN baik;High: ????????
+PLTS-JATIM-001;5,5;0;3;Surabaya: radiasi baik, jaringan dekat;High: ??????????
+PLTM-KALB-001;0;1,8;10;Kalbar: debit tinggi, jaringan sedang;Medium: ??????
+PLTS-SULS-001;5,7;0;6;Makassar: radiasi tinggi, akses baik;High: ????????
+PLTM-PAPU-001;0;2;15;Papua: debit kuat, jaringan jauh;Low: ????
+PLTS-NTB-001;5,9;0;4;Lombok: radiasi optimal, dekat PLN;High: ??????????
+PLTM-ACHD-001;0;1,6;7;Aceh: debit stabil, akses sedang;Medium: ??????
+PLTS-JABW-001;5,4;0;2;Bandung: radiasi baik, jaringan sangat dekat;High: ??????????
+PLTM-SULU-001;0;1,7;12;Sulut: debit baik, jaringan agak jauh;Medium: ??????
