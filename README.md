@@ -93,11 +93,11 @@ GNPV = ∑ [(CFₜ + ENVₜ) / (1 + r)ᵗ] - I₀
 
 > Proyek dianggap layak jika GNPV > 0.
 
-Hasil analisis **GNVP** dari data berikut [Financial_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Financial_Dataset.csv) menunjukkan hasil sebagai berikut :
+Analisis **GNVP** dari data berikut [Financial_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Financial_Dataset.csv) menunjukkan hasil sebagai berikut :
 
 ![financial-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/financial-dataset.png)
 
-Keterangan :
+Kesimpulan Hasil :
 
 - Proyek dengan GNPV positif secara konsisten dianggap layak menurut kaidah evaluasi finansial dan dampak lingkungan.
 - Dalam visualisasi, mayoritas proyek PLTS seperti PLTS-JABW-001, PLTS-JATIM-001, dan PLTS-NTB-001 menunjukkan GNPV tinggi → menandakan kombinasi arus kas dan dampak lingkungan yang menguntungkan.
@@ -123,12 +123,11 @@ Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkung
 
 **Rumus** : 
 ```
-
-
+CROI=Σ(Rₜ+Pc)/I₀
+```
 **CROI** mengukur seberapa efisien suatu proyek dalam menghasilkan manfaat lingkungan (pengurangan emisi karbon) dibandingkan dengan biaya investasi proyek tersebut.
----
 
-### 🔍 Penjelasan Komponen
+### Penjelasan tambahan
 
 | Komponen            | Penjelasan                                                                 |
 |---------------------|----------------------------------------------------------------------------|
@@ -138,26 +137,12 @@ Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkung
 | `Investment_Cost`   | Total biaya investasi proyek (dalam miliar rupiah)                        |
 | `CROI`              | Rasio efisiensi karbon terhadap biaya. Makin tinggi makin baik            |
 
+Analisis CROI dari data : [Environmental_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Environmental_Dataset.csv) menunjukkan hasil sebagai berikut :
 
-## 📈 Hasil Analisis dan Interpretasi
+!
 
+Kesimpulan hasil :
 * Proyek dengan **CROI tertinggi** menunjukkan dampak pengurangan karbon yang paling efisien secara finansial.
 * Proyek yang memiliki **CO2\_Reduction besar dan biaya investasi rendah** cenderung menghasilkan **CROI tinggi**.
 * Proyek seperti `PLTS-JABW-001` atau `PLTS-JATIM-001` (misalnya) akan menjadi prioritas investasi ramah lingkungan.
-
----
-
-## 📚 Referensi
-
-* OJK - Taksonomi Hijau Indonesia (2022)
-* POJK No. 60/POJK.04/2017 tentang Green Bond
-* POJK No. 51/POJK.03/2017 tentang RAKB
-* World Bank: Carbon Pricing Dashboard
-
-```
-
----
-
-Jika kamu ingin saya bantu buat README final dari *Green-Finance Project* kamu (dengan bagian GNPV, risiko, dll.), beri tahu saja. Saya siap bantu sampai jadi laporan lengkap.
-```
 
