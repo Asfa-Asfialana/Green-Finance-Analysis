@@ -96,3 +96,14 @@ GNPV = ∑ [(CFₜ + ENVₜ) / (1 + r)ᵗ] - I₀
 Hasil analisis **GNVP** dari data berikut [Financial_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Financial_Dataset.csv) menunjukkan hasil sebagai berikut :
 
 ![financial-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/financial-dataset.png)
+
+Keterangan :
+
+- Proyek dengan GNPV positif secara konsisten dianggap layak menurut kaidah evaluasi finansial dan dampak lingkungan.
+- Dalam visualisasi, mayoritas proyek PLTS seperti PLTS-JABW-001, PLTS-JATIM-001, dan PLTS-NTB-001 menunjukkan GNPV tinggi → menandakan kombinasi arus kas dan dampak lingkungan yang menguntungkan.
+- Beberapa PLTM juga menunjukkan kinerja baik, namun umumnya GNPV-nya lebih rendah dibandingkan PLTS.
+
+
+### 2.2 Enviromental Dataset
+
+
