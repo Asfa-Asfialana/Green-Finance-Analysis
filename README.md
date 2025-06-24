@@ -106,4 +106,58 @@ Keterangan :
 
 ### 2.2 Enviromental Dataset
 
+**Environmental Dataset** adalah kumpulan data proyek energi hijau yang merekam dampak lingkungan dari masing-masing proyek.
+
+Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkungan (green investment), khususnya dalam rangka transisi energi bersih dan kebijakan pembiayaan hijau.
+
+### 📊 Struktur Data
+
+| Nama Kolom                 | Deskripsi Singkat                                                                 |
+|---------------------------|------------------------------------------------------------------------------------|
+| `Project_ID`              | Kode unik proyek (misal: PLTS-NTT-001)                                             |
+| `CO2_Reduction`           | Estimasi pengurangan emisi karbon tahunan (dalam ton CO2e)                         |
+| `Energy_Output`           | Produksi energi tahunan (dalam satuan kWh atau MWh)                                |
+| `Environmental_Risk_Index`| Skor risiko lingkungan proyek (skala 0–100, makin tinggi makin berisiko)          |
+| `Konteks_Lingkungan`      | Deskripsi singkat kondisi lingkungan atau ekologi setempat                        |
+| `Peringkat_Dampak`        | Penilaian kualitatif terhadap dampak lingkungan (contoh: High / Medium / Low)      |
+
+**Rumus** : 
+```
+
+
+**CROI** mengukur seberapa efisien suatu proyek dalam menghasilkan manfaat lingkungan (pengurangan emisi karbon) dibandingkan dengan biaya investasi proyek tersebut.
+---
+
+### 🔍 Penjelasan Komponen
+
+| Komponen            | Penjelasan                                                                 |
+|---------------------|----------------------------------------------------------------------------|
+| `CO2_Reduction`     | Jumlah emisi karbon yang dikurangi per tahun oleh proyek (dalam ton CO2e) |
+| `Carbon_Price`      | Harga karbon per ton (Rp). Diambil dari pasar karbon atau estimasi sosial |
+| `Project_Lifetime`  | Umur proyek dalam tahun                                                   |
+| `Investment_Cost`   | Total biaya investasi proyek (dalam miliar rupiah)                        |
+| `CROI`              | Rasio efisiensi karbon terhadap biaya. Makin tinggi makin baik            |
+
+
+## 📈 Hasil Analisis dan Interpretasi
+
+* Proyek dengan **CROI tertinggi** menunjukkan dampak pengurangan karbon yang paling efisien secara finansial.
+* Proyek yang memiliki **CO2\_Reduction besar dan biaya investasi rendah** cenderung menghasilkan **CROI tinggi**.
+* Proyek seperti `PLTS-JABW-001` atau `PLTS-JATIM-001` (misalnya) akan menjadi prioritas investasi ramah lingkungan.
+
+---
+
+## 📚 Referensi
+
+* OJK - Taksonomi Hijau Indonesia (2022)
+* POJK No. 60/POJK.04/2017 tentang Green Bond
+* POJK No. 51/POJK.03/2017 tentang RAKB
+* World Bank: Carbon Pricing Dashboard
+
+```
+
+---
+
+Jika kamu ingin saya bantu buat README final dari *Green-Finance Project* kamu (dengan bagian GNPV, risiko, dll.), beri tahu saja. Saya siap bantu sampai jadi laporan lengkap.
+```
 
