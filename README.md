@@ -93,5 +93,6 @@ GNPV = ∑ [(CFₜ + ENVₜ) / (1 + r)ᵗ] - I₀
 
 > Proyek dianggap layak jika GNPV > 0.
 
+Hasil analisis **GNVP** dari data berikut [Financial_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Financial_Dataset.csv) menunjukkan hasil sebagai berikut :
 
-
+![financial-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/financial-dataset.png)
