@@ -225,12 +225,6 @@ Dari analisis data [Geospatial_Dataset](https://github.com/Asfa-Asfialana/Green-
 
 ---
 
-### Kesimpulan 
-
-Tentu, berikut adalah **kesimpulan proyek Green Finance** yang kamu kerjakan, berdasarkan kelima dimensi dataset—**finansial, lingkungan, sosial, ekonomi makro, dan geospasial**—disertai dengan **kalimat penutup hangat untuk Sobat ETL**, cocok untuk `README.md`, presentasi, atau laporan akhir:
-
----
-
 ## 📌 Kesimpulan
 
 Analisis proyek *Green Finance* ini menunjukkan bahwa keberlanjutan proyek energi hijau tidak hanya ditentukan oleh aspek finansial, tetapi juga oleh faktor lingkungan, sosial, ekonomi makro, dan risiko spasial.
