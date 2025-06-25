@@ -5,8 +5,6 @@
 Apa kabar hari ini? Semoga tetap semangat dan sehat selalu yaa 💪  
 Selamat datang di repository ini — repositori ini dibuat sebagai bagian dari **self-learning journey** untuk memahami dan menganalisis **green finance**, atau gampangnya: _menganalisis cara keuangan yang digunakan untuk project peduli sama lingkungan_ 🌍💸
 
----
-
 ## 🎯 Tujuan
 
 Tujuan dari proyek ini:
@@ -14,6 +12,7 @@ Tujuan dari proyek ini:
 - Melihat analisis green finance berdampak terhadap lingkungan dan sosial yang terukur.
 - Bagaimana kita dapat menggunakan data historis untuk memprediksi keberhasilan dan risiko proyek hijau.
 - Membedah berbagai variabel dalam dataset yang relevan, mulai dari data finansial, lingkungan, hingga sosial-ekonomi.
+  
 ----
 
 ## 1. Deskripsi Green Finance
@@ -27,6 +26,12 @@ Tujuan dari proyek ini:
 - Adaptasi dan mitigasi perubahan iklim
 
 Komponen Utama Green Finance adalah **Investasi Hijau** yang merupakan proyek dengan dampak lingkungan positif, seperti mengurangi emisi, menghemat energi, atau konservasi alam. Dan **Instrumen Keuangan** yang terdiri dari Green Bond, Green Loan, dan ESG Fund (Environmental, Social, Governance).
+
+Sedangkan untuk manfaat Green Finance adalah :
+
+- Mengurangi risiko jangka panjang akibat perubahan iklim
+- Mendorong transparansi lingkungan di sektor keuangan
+- Memberikan insentif bagi investor dan penerbit yang peduli lingkungan (misalnya **greenium**: spread lebih rendah pada green bond)
 
 ### ⚖️ Regulasi Green Finance di Indonesia
 
@@ -43,19 +48,13 @@ Mewajibkan lembaga keuangan menyusun:
 - **Rencana Aksi Keuangan Berkelanjutan (RAKB)**
 - Menilai portofolio berdasarkan prinsip keberlanjutan, termasuk analisis GNPV dan dampak ESG.
 
-Sedangkan untuk manfaat Green Finance adalah :
-
-- Mengurangi risiko jangka panjang akibat perubahan iklim
-- Mendorong transparansi lingkungan di sektor keuangan
-- Memberikan insentif bagi investor dan penerbit yang peduli lingkungan (misalnya **greenium**: spread lebih rendah pada green bond)
-
 ----
 
 ## 2. Analisis Field Dataset
 
 ### 2.1 Financial Dataset
 
-#### 📊 Struktur Dataset: Green Finance
+#### 📊 Struktur Dataset
 
 | Nama Field           | Deskripsi Singkat                             |
 |----------------------|-----------------------------------------------|
@@ -99,7 +98,7 @@ Kesimpulan Hasil :
 
 **Environmental Dataset** adalah kumpulan data proyek energi hijau yang merekam dampak lingkungan dari masing-masing proyek. Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkungan (green investment), khususnya dalam rangka transisi energi bersih dan kebijakan pembiayaan hijau.
 
-#### 📊 Struktur Data
+#### 📊 Struktur Dataset
 
 | Nama Kolom                 | Deskripsi Singkat                                                                 |
 |---------------------------|------------------------------------------------------------------------------------|
@@ -111,25 +110,88 @@ Kesimpulan Hasil :
 | `Peringkat_Dampak`        | Penilaian kualitatif terhadap dampak lingkungan (contoh: High / Medium / Low)      |
 
 **Rumus** : 
-```
-CROI=Σ(Rₜ+Pc)/I₀
-```
+## 🌿 Carbon Return on Investment (CROI)
+
+**CROI** mengukur seberapa efisien investasi dalam proyek lingkungan dalam menghasilkan pengurangan emisi karbon.
+
+### 📐 Rumus Matematika
+
+$$
+\text{CROI} = \frac{E \times P \times T}{I}
+$$
+
+### 📌 Keterangan:
+
+- \( E \) = Pengurangan emisi karbon per tahun (ton CO₂e)  
+- \( P \) = Harga karbon per ton CO₂e (dalam rupiah)  
+- \( T \) = Umur proyek (tahun)  
+- \( I \) = Total investasi awal proyek (rupiah)
+
+### ✅ Interpretasi:
+
+- Jika \( \text{CROI} > 1 \), maka proyek memberikan nilai pengurangan karbon lebih tinggi dari biaya investasinya.
+- Jika \( \text{CROI} < 1 \), maka nilai emisi yang dikurangi lebih kecil dari biaya proyek.
+- CROI digunakan untuk membandingkan efisiensi berbagai proyek iklim.
+
+### ⚠️ Catatan:
+
+- Gunakan satuan **ton CO₂e** dan **rupiah** secara konsisten.
+- Ambil nilai **harga karbon** dari pasar karbon atau *social cost of carbon* jika tersedia.
+
 Menghitung **CROI** artinya mengukur seberapa efisien suatu proyek dalam menghasilkan manfaat lingkungan (pengurangan emisi karbon) dibandingkan dengan biaya investasi proyek tersebut.
-
-#### Penjelasan tambahan
-
-| Komponen            | Penjelasan                                                                 |
-|---------------------|----------------------------------------------------------------------------|
-| `CO2_Reduction`     | Jumlah emisi karbon yang dikurangi per tahun oleh proyek (dalam ton CO2e) |
-| `Carbon_Price`      | Harga karbon per ton (Rp). Diambil dari pasar karbon atau estimasi sosial |
-| `Project_Lifetime`  | Umur proyek dalam tahun                                                   |
-| `Investment_Cost`   | Total biaya investasi proyek (dalam miliar rupiah)                        |
-| `CROI`              | Rasio efisiensi karbon terhadap biaya. Makin tinggi makin baik            |
 
 Analisis CROI dari data : [Environmental_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Environmental_Dataset.csv) menunjukkan hasil sebagai berikut :
 
 ![enviromental-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/enviromental-dataset.png)
 
 ### 2.3 Social Dataset
+
+Social Dataset adalah data yang digunakan untuk mengukur dampak proyek terhadap masyarakat, aspek krusial dalam kerangka ESG (*Environmental, Social, and Governance*).
+Metode analisis dapat mencakup pengukuran SROI (Social Return on Investment) dan estimasi dampak berbasis data tenaga kerja dan sosial. Hasil ini membantu menilai apakah proyek memberikan manfaat berkelanjutan dan inklusif bagi masyarakat lokal.
+
+#### 📊 Struktur Dataset
+
+| Nama Field                  | Deskripsi Singkat                                                                 |
+|----------------------------|------------------------------------------------------------------------------------|
+| `Jobs_Created`             | Jumlah pekerjaan FTE yang dihasilkan proyek, mencerminkan manfaat ekonomi lokal.  |
+| `Community_Engagement_Score` | Tingkat penerimaan dan partisipasi masyarakat, dinilai dari skor 0–100.           |
+| `Access_to_Clean_Energy_Rate` | Persentase kenaikan akses masyarakat ke energi bersih, terutama wilayah 3T.       |
+| `Gini_Coefficient_Impact`  | Efek proyek terhadap ketimpangan pendapatan; nilai negatif = ketimpangan menurun. |
+
+Hasil analisis dari data 
+
+![
+
+
+### 2.4 Economic Dataset
+
+Dataset ini memberikan gambaran kondisi ekonomi tempat proyek dijalankan. Informasi ini penting untuk memahami risiko dan potensi keberhasilan proyek dari sisi ekonomi nasional.
+
+#### 📊 Struktur Dataset
+
+| Nama Field           | Deskripsi Singkat                                                             |
+|----------------------|--------------------------------------------------------------------------------|
+| `GDP_Growth`         | Laju pertumbuhan ekonomi. Tinggi = peluang pasar energi makin besar.          |
+| `Inflation_Rate`     | Tingkat inflasi. Semakin tinggi, biaya proyek bisa naik.                      |
+| `FDI_Inflows`        | Masuknya investasi asing. Mencerminkan kepercayaan terhadap iklim usaha.      |
+| `Unemployment_Rate`  | Persentase pengangguran. Tinggi = proyek punya dampak sosial lebih besar.     |
+
+Hasil analisis 
+
+![
+
+### 2.5 Geospatial Dataset
+
+Dataset ini menyajikan data lokasi proyek yang penting untuk menilai risiko lingkungan dan keberlanjutan proyek dari sisi spasial.
+
+#### 📊 Struktur Dataset
+
+| Nama Field                    | Deskripsi Singkat                                                  |
+|-------------------------------|---------------------------------------------------------------------|
+| `Latitude` / `Longitude`      | Titik koordinat lokasi proyek, untuk analisis peta dan risiko alam. |
+| `Proximity_to_Protected_Area`| Jarak ke kawasan lindung. Dekat = potensi risiko regulasi tinggi.   |
+| `Land_Use_Change`             | Perubahan fungsi lahan. Misalnya hutan jadi perkebunan = risiko naik.|
+
+
 
 
