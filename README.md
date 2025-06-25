@@ -63,24 +63,22 @@ Mewajibkan lembaga keuangan menyusun:
 | Default_Risk_Score   | Skor risiko gagal bayar (0–100)               |
 | Green_Bond_Spread    | Selisih imbal hasil (bps) vs obligasi biasa   |
 
-## 📐 Rumus Green Net Present Value (GNPV)
+#### 📐 Rumus Green Net Present Value (GNPV)
 
-GNPV digunakan untuk menilai kelayakan finansial dan lingkungan dari proyek hijau. Rumus lengkapnya:
-
-```
-GNPV = ∑ [(CFₜ + ENVₜ) / (1 + r)ᵗ] - I₀
-```
+$$
+GNPV = \sum_{t=1}^{N} \frac{(CF_t + E_t)}{(1 + r)^t} - I_0
+$$
 
 **Keterangan:**
+- \( GNPV \): Green Net Present Value (nilai kini bersih hijau).
+- \( CF_t \): Arus kas bersih konvensional pada tahun ke-\(t\).
+- \( E_t \): Nilai eksternalitas lingkungan (misalnya pengurangan emisi CO₂, penghematan air) pada tahun ke-\(t\).
+- \( r \): Tingkat diskonto (contoh: 0.05 untuk 5%).
+- \( t \): Tahun ke-\(t\).
+- \( N \): Umur proyek (dalam tahun).
+- \( I_0 \): Investasi awal proyek.
 
-- **GNPV** : Green Net Present Value (dalam rupiah)
-- **CFₜ** : Arus kas bersih proyek pada tahun ke-`t` (operasional - biaya - pajak)
-- **ENVₜ** : Nilai ekonomi manfaat lingkungan (misalnya, pengurangan emisi CO₂ × harga karbon)
-- **r** : Tingkat diskonto (dalam desimal, misal 0.05 untuk 5%)
-- **t** : Tahun ke-`t`
-- **T** : Umur proyek (tahun)
-- **I₀** : Investasi awal proyek (dalam rupiah)
-
+✅ GNPV yang lebih tinggi menunjukkan proyek lebih layak secara finansial **dan** berkontribusi pada keberlanjutan lingkungan.
 > Proyek dianggap layak jika GNPV > 0.
 
 Analisis **GNVP** dari data berikut [Financial_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Financial_Dataset.csv) menunjukkan hasil sebagai berikut :
@@ -110,11 +108,8 @@ Kesimpulan Hasil :
 | `Peringkat_Dampak`        | Penilaian kualitatif terhadap dampak lingkungan (contoh: High / Medium / Low)      |
 
 **Rumus** : 
-## 🌿 Carbon Return on Investment (CROI)
 
-**CROI** mengukur seberapa efisien investasi dalam proyek lingkungan dalam menghasilkan pengurangan emisi karbon.
-
-## 📊 Rumus Carbon Return on Investment (CROI)
+**🌿 Carbon Return on Investment (CROI)** atau **CROI** adalah rumus untuk mengukur seberapa efisien investasi dalam proyek lingkungan dalam menghasilkan pengurangan emisi karbon.
 
 $$
 CROI = \frac{\sum_{t=1}^{N} (R_t \times P_C)}{I_0}
@@ -128,14 +123,6 @@ $$
 - \( N \): Umur proyek (dalam tahun).
 
 ✅ Nilai CROI yang lebih tinggi menandakan efisiensi karbon yang lebih baik per unit investasi.
-
-
-### ⚠️ Catatan:
-
-- Gunakan satuan **ton CO₂e** dan **rupiah** secara konsisten.
-- Ambil nilai **harga karbon** dari pasar karbon atau *social cost of carbon* jika tersedia.
-
-Menghitung **CROI** artinya mengukur seberapa efisien suatu proyek dalam menghasilkan manfaat lingkungan (pengurangan emisi karbon) dibandingkan dengan biaya investasi proyek tersebut.
 
 Analisis CROI dari data : [Environmental_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Environmental_Dataset.csv) menunjukkan hasil sebagai berikut :
 
