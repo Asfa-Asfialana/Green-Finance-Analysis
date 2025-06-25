@@ -13,8 +13,7 @@ Tujuan dari proyek ini:
 - Memahami konsep green finance dari sisi data
 - Melihat analisis green finance berdampak terhadap lingkungan dan sosial yang terukur.
 - Bagaimana kita dapat menggunakan data historis untuk memprediksi keberhasilan dan risiko proyek hijau.
-- Membedah berbagai variabel dalam dataset yang relevan, mulai dari data finansial, lingkungan, hingga sosial-ekonomi, lengkap dengan regulasi dan acuan akademis.
-
+- Membedah berbagai variabel dalam dataset yang relevan, mulai dari data finansial, lingkungan, hingga sosial-ekonomi.
 ----
 
 ## 1. Deskripsi Green Finance
@@ -27,15 +26,7 @@ Tujuan dari proyek ini:
 - Efisiensi energi
 - Adaptasi dan mitigasi perubahan iklim
 
-### 💡 Komponen Utama Green Finance
-
-1. **Investasi Hijau**
-   - Proyek dengan dampak lingkungan positif, seperti mengurangi emisi, menghemat energi, atau konservasi alam.
-
-2. **Instrumen Keuangan**
-   - Green Bond
-   - Green Loan
-   - ESG Fund (Environmental, Social, Governance)
+Komponen Utama Green Finance adalah **Investasi Hijau** yang merupakan proyek dengan dampak lingkungan positif, seperti mengurangi emisi, menghemat energi, atau konservasi alam. Dan **Instrumen Keuangan** yang terdiri dari Green Bond, Green Loan, dan ESG Fund (Environmental, Social, Governance).
 
 ### ⚖️ Regulasi Green Finance di Indonesia
 
@@ -52,7 +43,7 @@ Mewajibkan lembaga keuangan menyusun:
 - **Rencana Aksi Keuangan Berkelanjutan (RAKB)**
 - Menilai portofolio berdasarkan prinsip keberlanjutan, termasuk analisis GNPV dan dampak ESG.
 
-### 🏦 Manfaat Green Finance
+Sedangkan untuk manfaat Green Finance adalah :
 
 - Mengurangi risiko jangka panjang akibat perubahan iklim
 - Mendorong transparansi lingkungan di sektor keuangan
@@ -106,9 +97,7 @@ Kesimpulan Hasil :
 
 ### 2.2 Enviromental Dataset
 
-**Environmental Dataset** adalah kumpulan data proyek energi hijau yang merekam dampak lingkungan dari masing-masing proyek.
-
-Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkungan (green investment), khususnya dalam rangka transisi energi bersih dan kebijakan pembiayaan hijau.
+**Environmental Dataset** adalah kumpulan data proyek energi hijau yang merekam dampak lingkungan dari masing-masing proyek. Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkungan (green investment), khususnya dalam rangka transisi energi bersih dan kebijakan pembiayaan hijau.
 
 #### 📊 Struktur Data
 
@@ -125,7 +114,7 @@ Dataset ini sangat penting dalam mendukung keputusan investasi berbasis lingkung
 ```
 CROI=Σ(Rₜ+Pc)/I₀
 ```
-**CROI** mengukur seberapa efisien suatu proyek dalam menghasilkan manfaat lingkungan (pengurangan emisi karbon) dibandingkan dengan biaya investasi proyek tersebut.
+Menghitung **CROI** artinya mengukur seberapa efisien suatu proyek dalam menghasilkan manfaat lingkungan (pengurangan emisi karbon) dibandingkan dengan biaya investasi proyek tersebut.
 
 #### Penjelasan tambahan
 
@@ -141,4 +130,6 @@ Analisis CROI dari data : [Environmental_Dataset](https://github.com/Asfa-Asfial
 
 ![enviromental-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/enviromental-dataset.png)
 
-### 2.3 
+### 2.3 Social Dataset
+
+
