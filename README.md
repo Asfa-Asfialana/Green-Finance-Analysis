@@ -142,10 +142,20 @@ Metode analisis dapat mencakup pengukuran SROI (Social Return on Investment) dan
 | `Access_to_Clean_Energy_Rate` | Persentase kenaikan akses masyarakat ke energi bersih, terutama wilayah 3T.       |
 | `Gini_Coefficient_Impact`  | Efek proyek terhadap ketimpangan pendapatan; nilai negatif = ketimpangan menurun. |
 
-Hasil analisis dari data 
+**🤝 Rumus Social Return on Investment (SROI)**
 
-![
+$$
+SROI = \frac{NPV_{social}}{I_0}
+$$
 
+**Keterangan:**
+- \( SROI \): *Social Return on Investment*, menunjukkan berapa nilai sosial yang dihasilkan per rupiah investasi.
+- \( NPV_{social} \): Nilai sekarang (Net Present Value) dari seluruh dampak sosial yang dimonetisasi (dalam rupiah).
+- \( I_0 \): Investasi awal proyek (dalam rupiah).
+
+Hasil analisis dari data [Social_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Social_Dataset.csv) menunjukkan hasil sebagai berikut :
+
+![social-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/social-dataset.png)
 
 ### 2.4 Economic Dataset
 
@@ -160,9 +170,24 @@ Dataset ini memberikan gambaran kondisi ekonomi tempat proyek dijalankan. Inform
 | `FDI_Inflows`        | Masuknya investasi asing. Mencerminkan kepercayaan terhadap iklim usaha.      |
 | `Unemployment_Rate`  | Persentase pengangguran. Tinggi = proyek punya dampak sosial lebih besar.     |
 
-Hasil analisis 
+**📉 Rumus Economic Risk Adjustment Factor (ERAF)**
 
-![
+$$
+ERAF = w_1 \left( \frac{IR_t - IR_{base}}{IR_{base}} \right) + w_2 \left( \frac{UR_t - UR_{base}}{UR_{base}} \right) - w_3 \left( \frac{GDP_t - GDP_{base}}{GDP_{base}} \right)
+$$
+
+**Keterangan:**
+- \( ERAF \): *Economic Risk Adjustment Factor*, skor penyesuaian risiko ekonomi (tanpa satuan).
+- \( IR_t \): Tingkat inflasi saat ini (Inflation Rate).
+- \( IR_{base} \): Inflasi dasar atau target bank sentral.
+- \( UR_t \): Tingkat pengangguran saat ini.
+- \( UR_{base} \): Pengangguran dasar (rata-rata historis).
+- \( GDP_t \): Pertumbuhan Produk Domestik Bruto (PDB) saat ini.
+- \( GDP_{base} \): Pertumbuhan PDB dasar (rata-rat_
+
+Dari analisis [Economic_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Economic_Dataset.csv) menunjukkan hasil sebagai berikut :
+
+![Grafik_ERAF_PLTS_PLTM](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/Grafik_ERAF_PLTS_PLTM.png)
 
 ### 2.5 Geospatial Dataset
 
@@ -176,6 +201,46 @@ Dataset ini menyajikan data lokasi proyek yang penting untuk menilai risiko ling
 | `Proximity_to_Protected_Area`| Jarak ke kawasan lindung. Dekat = potensi risiko regulasi tinggi.   |
 | `Land_Use_Change`             | Perubahan fungsi lahan. Misalnya hutan jadi perkebunan = risiko naik.|
 
+**Rumus 🌍 Geospatial Risk Index (GRI)**
 
+$$
+GRI = w_1 \cdot H + w_2 \cdot P + w_3 \cdot L
+$$
 
+**Keterangan:**
 
+- \( GRI \): *Geospatial Risk Index*, skor risiko lokasi (0–1).
+- \( H \): Skor risiko bencana alam, normalisasi dari data historis BNPB/BMKG.
+- \( P \): Skor risiko kedekatan dengan kawasan lindung, dari *Proximity_to_Protected_Area*.
+- \( L \): Skor risiko perubahan tutupan lahan (*Land_Use_Change*).
+- \( w_1, w_2, w_3 \): Bobot faktor risiko (jumlahnya = 1), ditentukan melalui metode seperti *AHP*.
+
+**Aturan Praktis:**
+- GRI mendekati 1 → Risiko tinggi → perlu uji tuntas mendalam.
+- Gunakan data spasial resmi (Ina-Geoportal, KLHK, BNPB).
+
+Dari analisis data [Geospatial_Dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Data/Geospatial_Dataset.csv) menunjukkan hasil sebagai berikut :
+
+![geospatial-dataset](https://github.com/Asfa-Asfialana/Green-Finance-Analysis/blob/main/Visualisasi/geospatial-dataset.png)
+
+---
+
+### Kesimpulan 
+
+Tentu, berikut adalah **kesimpulan proyek Green Finance** yang kamu kerjakan, berdasarkan kelima dimensi dataset—**finansial, lingkungan, sosial, ekonomi makro, dan geospasial**—disertai dengan **kalimat penutup hangat untuk Sobat ETL**, cocok untuk `README.md`, presentasi, atau laporan akhir:
+
+---
+
+## 📌 Kesimpulan
+
+Analisis proyek *Green Finance* ini menunjukkan bahwa keberlanjutan proyek energi hijau tidak hanya ditentukan oleh aspek finansial, tetapi juga oleh faktor lingkungan, sosial, ekonomi makro, dan risiko spasial.
+
+* 💰 **Financial Dataset** memperlihatkan bahwa proyek dengan arus kas stabil dan investasi efisien cenderung lebih layak secara ekonomi.
+* 🌱 **Environmental Dataset** menegaskan pentingnya efisiensi emisi dan penghematan sumber daya sebagai indikator keberhasilan proyek hijau.
+* 🧑‍🤝‍🧑 **Social Dataset** menyoroti kontribusi proyek terhadap penciptaan lapangan kerja, keterlibatan masyarakat, dan pengurangan ketimpangan.
+* 📈 **Economic Dataset** memberi konteks penting dalam membaca dinamika risiko makro yang dapat mempengaruhi kelayakan jangka panjang proyek.
+* 🗺️ **Geospatial Dataset** membantu mengidentifikasi potensi risiko lokasi seperti bencana alam, kedekatan dengan kawasan lindung, dan perubahan tutupan lahan.
+
+Melalui integrasi kelima hal ini, pendekatan *Green Finance* mampu memberi pandangan yang lebih adil dan akurat dalam menilai proyek energi berkelanjutan, baik dari sisi dampak maupun risikonya.
+Terima kasih sudah membaca repository ini, Semoga analisis ini menginspirasi kita semua untuk membuat keputusan berbasis data yang lebih hijau dan berkeadilan.
+Sampai jumpa di repository berikutnya dan tetap semangat,Sobat ETL 🌿💡📊
