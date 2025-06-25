@@ -114,24 +114,21 @@ Kesimpulan Hasil :
 
 **CROI** mengukur seberapa efisien investasi dalam proyek lingkungan dalam menghasilkan pengurangan emisi karbon.
 
-### 📐 Rumus Matematika
+## 📊 Rumus Carbon Return on Investment (CROI)
 
 $$
-\text{CROI} = \frac{E \times P \times T}{I}
+CROI = \frac{\sum_{t=1}^{N} (R_t \times P_C)}{I_0}
 $$
 
-### 📌 Keterangan:
+**Keterangan:**
+- \( CROI \): Carbon Return on Investment.
+- \( R_t \): Emisi karbon yang berhasil dikurangi pada tahun ke-\(t\) (ton CO₂e).
+- \( P_C \): Harga karbon per ton CO₂e (dalam Rupiah).
+- \( I_0 \): Investasi awal proyek (dalam Rupiah).
+- \( N \): Umur proyek (dalam tahun).
 
-- \( E \) = Pengurangan emisi karbon per tahun (ton CO₂e)  
-- \( P \) = Harga karbon per ton CO₂e (dalam rupiah)  
-- \( T \) = Umur proyek (tahun)  
-- \( I \) = Total investasi awal proyek (rupiah)
+✅ Nilai CROI yang lebih tinggi menandakan efisiensi karbon yang lebih baik per unit investasi.
 
-### ✅ Interpretasi:
-
-- Jika \( \text{CROI} > 1 \), maka proyek memberikan nilai pengurangan karbon lebih tinggi dari biaya investasinya.
-- Jika \( \text{CROI} < 1 \), maka nilai emisi yang dikurangi lebih kecil dari biaya proyek.
-- CROI digunakan untuk membandingkan efisiensi berbagai proyek iklim.
 
 ### ⚠️ Catatan:
 
